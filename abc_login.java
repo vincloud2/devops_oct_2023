@@ -9,9 +9,8 @@ declare global {
 		interface Locals {
 			requireAuth: () => { id: string, isAdmin: boolean };
 		}
-		// interface PageData {}
-		// interface Platform {}
-	}
-}
-
-export { };
+declare global {
+	namespace App {
+		// interface Error {}
+		interface Locals {
+			requireAuth: () => { id: string, isAdmin: boolean };
