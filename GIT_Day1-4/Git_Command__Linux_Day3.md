@@ -8,7 +8,10 @@
 
 
 # to install git on AMAZON linux
-- yum install git
+- yum install git -y
+
+# command to check the git version 
+- git -v
 
 
 # to list the files in folder 
@@ -22,15 +25,12 @@
  
 
 # change Dir
-
 - cd "directory_path"
 
 #  to check the present wokring directory 
-
 - pwd
 
 # to go back to previous folder 
-
 - cd ..
 
 
