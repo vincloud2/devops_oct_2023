@@ -1,0 +1,42 @@
+  119  cd hello_world/
+  120  cd Helloworld-latest/
+  121  docker images
+  122  docker rmi tomcat
+  123  docker images
+  124  clear
+  125  clear
+  126  docker images
+  127  docker build -t hello_world_vinod .
+  128  ls
+  129  cd target/
+  130  ls
+  131  cd ..
+  132  git pull
+  133  mvn clean package
+  134  docker build -t hello_world_vinod .
+  135  docker images
+  136  docker ps
+  137  docker run -d -p 8080:8080 hello_world_vinod
+  138  docker login -u vnom1985 -p abc@12345
+  139  docker tag hello_world_vinod vnom1985/hello_world_vinod
+  140  docker images
+  141  docker push vnom1985/hello_world_vinod
+  142  git pull
+  143  mvn clean package
+  144  docker images
+  145  docker rmi hello_world_vinod
+  146  docker images
+  147  docker build -t hello_world_vinod .
+  148  docker images
+  149  docker rmi 040a0c744676
+  150  docker ps
+  151  docker stop 79c72f06244f
+  152  docker rmi 040a0c744676
+  153  docker RM 79c72f06244
+  154  docker rm 79c72f06244
+  155  docker rmi 040a0c744676
+  156  docker images
+  157  docker tag hello_world_vinod vnom1985/hello_world_vinod
+  158  docker push vnom1985/hello_world_vinod
+  159  docker run -d -p 8080:8080 hello_world_vinod
+  160  history 
