@@ -30,7 +30,10 @@ ssh user@ipaddress
 
 
 # Command to install ansible 
+- sudo yum update -y
+- sudo yum install ansible -y
 
+ # Command to install ansible  (old method)
 - sudo yum update -y
 - sudo amazon-linux-extras install ansible2 -y
 - ansible --version
