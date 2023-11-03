@@ -1,0 +1,16 @@
+---
+- hosts: project_A
+  become: true
+  tasks:
+    - name: Ensure Docker is installed
+      yum:
+        name: docker
+        state: present
+
+    - name: Start Jenkins container
+      docker_container:
+        name: jenkins
+        image: jenkins/jenkins:lts
+        ports:
+          - "8080:8080"
+        state: started

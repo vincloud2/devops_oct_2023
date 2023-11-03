@@ -1,0 +1,13 @@
+---
+- hosts: all
+  become: true
+  tasks:
+    - name: Install the latest version of docker
+      ansible.builtin.yum:
+        name: docker
+        state: latest
+    - name: Make sure a service unit is running for docker
+      ansible.builtin.systemd:
+        state: started
+        name: docker
+        enabled: yes
