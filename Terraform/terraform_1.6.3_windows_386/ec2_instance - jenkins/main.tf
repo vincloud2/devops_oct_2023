@@ -8,5 +8,6 @@ module "ec2_instance" {
   key_name               = "vinod_aug2023"
   vpc_security_group_ids = ["sg-076bbf8a4ce79b6aa"]
   user_data = file("jenkins.sh")
+  count = 6
 
 }
