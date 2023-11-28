@@ -96,6 +96,12 @@ ls -l
 
 
 
+# other command 
+find / -name tomcat-users.xml
+
+
+
+
 
 
 
