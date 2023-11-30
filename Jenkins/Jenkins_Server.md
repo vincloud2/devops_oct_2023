@@ -38,7 +38,10 @@ docker start "container_id"
 
 # how to enter inside the container 
 
- - docker exec -it "container_id" /bin/bash 
+ - docker exec -it "container_id" /bin/bash
+
+# to get the initial password 
+cat /var/jenkins_home/secrets/initialAdminPassword
 
 
 
