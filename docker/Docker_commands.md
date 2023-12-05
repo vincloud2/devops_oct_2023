@@ -36,9 +36,11 @@
 # to remove all the Iamges
 - docker rmi -f $(docker images -q)
 
-# to stop all the container  and remove all conatiner 
-docker stop $(docker ps -q)
-docker rm $(docker ps -a -q)
+# to stop all the container  
+- docker stop $(docker ps -q)
+
+ # remove all conatiner 
+- docker rm $(docker ps -a -q)
 
 docker images -q: This command lists all the Docker images available on your system and prints only the image IDs (short hexadecimal strings).
 docker rmi -f: This command removes Docker images. The -f flag forces the removal of images, even if they are currently being used by containers.
