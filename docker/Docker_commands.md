@@ -74,3 +74,22 @@ Example:
 docker cp ./Dockerfile b44eb1aab2dd:/usr/local/tomcat/temp/
 
 
+# how to build a docker image (Sample command)
+
+- docker build -t litte_fashion .
+
+
+# how to login to docker hub in cli
+
+- dockcr login -u username -p password
+
+# how to tag the docker image to your account
+
+- docker tag litte_fashion username/litte_fashion
+ 
+# how to push the image to docker hub
+
+- docker push username/litte_fashion
+
+
+
