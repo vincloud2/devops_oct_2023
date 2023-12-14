@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: littefashion-deployment
+  labels:
+    app: littefashion
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      app: littefashion
+  template:
+    metadata:
+      labels:
+        app: littefashion
+    spec:
+      containers:
+      - name: littefashion
+        image: vnom1985/little_fashion_vin
+        ports:
+        - containerPort: 80
