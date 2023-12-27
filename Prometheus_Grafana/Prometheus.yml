@@ -7,7 +7,7 @@ scrape_configs:
     static_configs:
       - targets: ["172.31.36.38:9100"]
 
-  - job_name: "Ansible_1"
+  - job_name: "Ansible_2"
     static_configs:
       - targets: ["172.31.34.180:9100"]
 
