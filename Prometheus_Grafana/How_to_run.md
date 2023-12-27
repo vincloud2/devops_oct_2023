@@ -12,3 +12,7 @@ docker run -d -p 9100:9100 quay.io/prometheus/node-exporter:v1.2.2
 # How to run the Grafana docker image
 
 docker run -d --name=grafana -p 3000:3000 grafana/grafana
+
+
+https://grafana.com/grafana/dashboards/1860-node-exporter-full/
+1860
