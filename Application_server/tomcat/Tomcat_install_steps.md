@@ -1,9 +1,10 @@
 # Install Tomcat 
-- wget https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.96/bin/apache-tomcat-8.5.96.tar.gz
+# old version - wget https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.96/bin/apache-tomcat-8.5.96.tar.gz
+- wget https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.98/bin/apache-tomcat-8.5.98.tar.gz
 
 
 # to Untar
-- tar -zvxf apache-tomcat-8.5.96.tar.gz
+- tar -zvxf apache-tomcat-8.5.98.tar.gz
 
 
 # to install java 
@@ -12,7 +13,7 @@ yum install java-11 -y
 # to start the services 
 
  # go to 
-- cd /home/ec2-user/apache-tomcat-8.5.96/bin/
+- cd /home/ec2-user/apache-tomcat-8.5.98/bin/
 - ./startup.sh
 
 
@@ -36,8 +37,8 @@ yum install java-11 -y
 - find / -name context.xml
 Usually it will under 2 places, and it neeeds to be changed in both the places
 
-- /home/ec2-user/apache-tomcat-8.5.96/webapps/host-manager/META-INF/context.xml
-- /home/ec2-user/apache-tomcat-8.5.96/webapps/manager/META-INF/context.xml
+- /home/ec2-user/apache-tomcat-8.5.98/webapps/host-manager/META-INF/context.xml
+- /home/ec2-user/apache-tomcat-8.5.98/webapps/manager/META-INF/context.xml
 
 
 # to Edit the File with vi
