@@ -67,7 +67,7 @@ Sample
 # Update users information in the tomcat-users.xml file goto tomcat home directory and Add below users using vi tomcat-users.xml
 
 
-/home/ec2-user/apache-tomcat-8.5.96/conf/tomcat-users.xml file
+/home/ec2-user/apache-tomcat-8.5.98/conf/tomcat-users.xml file
 
 
 <role rolename="manager-gui"/>
@@ -84,7 +84,7 @@ Sample
 - /home/ec2-user/tomcat/apache-tomcat-8.5.96/bin/startup.sh
 
 
-_________________________________________________________________________________________________________________-________________
+________________________________________________________________________________________________________________
 
 
 
