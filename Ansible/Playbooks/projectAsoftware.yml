@@ -1,0 +1,33 @@
+---
+- hosts: project_A
+  become: true
+  tasks:
+    - name: Install the latest version of docker
+      ansible.builtin.yum:
+        name: docker
+        state: latest
+    - name: Make sure a service unit is running for docker
+      ansible.builtin.systemd:
+        state: started
+        name: docker
+        enabled: yes
+    - name: Install the latest version of maven
+      ansible.builtin.yum:
+        name: maven
+        state: latest
+    - name: Start Jenkins container
+      docker_container:
+        name: jenkins
+        image: jenkins/jenkins:lts
+        ports:
+          - "8080:8080"
+        state: started
+    - name: Install the latest version of httpd
+      ansible.builtin.yum:
+        name: httpd
+        state: latest
+    - name: Make sure a service unit is running for httpd
+      ansible.builtin.systemd:
+        state: started
+        name: httpd
+
