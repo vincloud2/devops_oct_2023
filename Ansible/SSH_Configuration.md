@@ -12,7 +12,8 @@
 - cat authorized_keys
 - vi authorized_keys
 
-# We need to copy the id_rsa.pub key to the VM's/ machine which need to be connected- hosts unders authenticatedkeys
+# We need to copy the id_rsa.pub key to the VM's/ machine which need to be connected- hosts unders - vi authorized_keys
+
 - cd  .ssh 
 - vi authorized_keys
 
