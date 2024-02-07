@@ -1,0 +1,17 @@
+# my global config
+global:
+  scrape_interval: 15s
+
+scrape_configs:
+  - job_name: "Jenkins_Jan2024_batch"
+    static_configs:
+      - targets: ["172.31.27.169:9100"]
+
+  - job_name: "Jenkins_EC2_2024"
+    static_configs:
+      - targets: ["172.31.39.76:9100"]
+      
+  - job_name: "ansible_2024_server"
+    static_configs:
+      - targets: ["172.31.38.65:9100"]
+      
