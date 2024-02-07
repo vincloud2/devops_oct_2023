@@ -4,7 +4,6 @@
 docker run --restart unless-stopped -d -p 9090:9090 -v /home/ec2-user/prometheus:/etc/prometheus prom/prometheus
 
 
-
 # How to run the nodeexporter  docker image
 docker run --restart unless-stopped -d -p 9100:9100 quay.io/prometheus/node-exporter:v1.2.2
 
